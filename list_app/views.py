@@ -63,7 +63,7 @@ class TaskList(LoginRequiredMixin,ListView):
 class TaskDetail(LoginRequiredMixin,DetailView):
     model=Task
     context_object_name = 'task'
-    template_name='list_app/task.html'
+    template_name='list_app/task_view.html'
 
 class TaskCreate(LoginRequiredMixin,CreateView):
     model = Task

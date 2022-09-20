@@ -1,0 +1,16 @@
+{% extends 'list_app/main.html' %}
+
+{% block content %}
+
+<div class="header-bar">
+    <h3>Task Details</h3>
+    <a href="{% url 'tasks' %}">&#8592; Go Back</a>
+</div>
+
+<div class="card-body">
+   <h1>{{task.title}}</h1>
+   
+   <p class="task-description">{{task.description}}</p>
+</div>
+
+{% endblock content %}
